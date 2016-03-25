@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+function imprSelec(muestra)
+{
+    var ficha = document.getElementById(muestra);
+    var ventimp = window.open(' ','popimpr');
+    ventimp.document.write(ficha.innerHTML);
+    ventimp.document.close();
+    ventimp.print();
+    ventimp.close();
+}
+</script>
+
+<html>
+    <head>
+        <title>SeriesJa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <LINK REL=StyleSheet HREF="Public/css.css" TYPE="text/css" MEDIA=screen>
+    </head>
+    <body>
+        <div class="portada">
+            <a href="index.html"><img src="Public/img/Cartelera/cartelera.jpg" height="100px"/></a> <b>Series Ja </b> "Son para ti"<br>
+        </div>
+        <div class="header-box">
+            <div class="header-nav">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a> <span class="flecha">&#9660</span></li>
+                    <li><a href="listado.html">Listado <span class="flecha">&#9660</span></a></li>
+                    <li><a href="#">Top 50 <span class="flecha">&#9660</span></a></li>
+                    <li><a id="active" href="serieGrafia.html">SerieGrafía <span class="flecha">&#9660</span></a></li>
+                    <li><a href="#">Quiénes somos <span class="flecha">&#9660</span></a></li>
+                    <li style="float:right;"><a href="#">Log in <span class="flecha">&#9660</span></a></li>
+                </ul>
+            </div>
+            <div class="header-logo">
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="content-box">
+            <div class="izquierda">
+            <a href="index.html">home</a> > <a href="serieGrafia.html">serieGrafia</a> > <a href="trueBlood.html">True Blood</a>
+            </div>
+            
+            <div class="derecha">
+            <form id="buscador" action="/search" style="display:inline;" method="get">
+                        <input id="caja_de_busqueda" name="q" placeholder="Introduce tu búsqueda..." />
+                        <input id="boton_de_buscar" value="Buscar" type="submit" />
+            </form>
+            </div>
+                
+            <h1>Reseña de True Blood</h1><br>
+            <h3 class="fondo">Acción</h3>
+            <p align="right">
+                <button onclick="imprSelec('muestra')" align="right">Imprimir en PDF</button>
+            </p>
+            <div id="muestra" class="content-line-reseña">
+                <div class="imagen-reseña">
+                    <img src="Public/img/trueBlood.jpg" width="100%" />
+                </div>
+                
+                <div class="texto-reseña">
+                    <!-- <button onclick="window.print();" float="right">Imprimir en PDF</button> -->
+                    <center><h3>Título original</h3>
+                        <h4>True Blood (TV Series)</h4></center><br>
+                    <b>Año</b>
+                    2008<br><br>
+                    <b>Duración</b>
+                    55 min.<br><br>
+                    <b>País</b>
+                    Estados Unidos Estados Unidos<br><br>
+                    <b>Director</b>
+                    Alan Ball (Creator), Michael Lehmann, Scott Winant, John Dahl, Daniel Minahan, Michael Ruscio, Anthony Hemingway, Lesli Linka Glatter, David Petrarca, Romeo Tirone, Daniel Attias, Alan Ball, Stephen Moyer, Howard Deutch, Nick Gomez, Nancy Oliver, Marcos Siega, Michael Cuesta, Adam Davidson, Jeremy Podeswa<br><br>
+                    <b>Guión</b>
+                    Alan Ball, Charlaine Harris, Brian Buckner, Raelle Tucker, Alexander Woo, Nancy Oliver, Chris Offutt (Novelas: Charlaine Harris)<br><br>
+                    <b>Música</b>
+                    Nathan Barr<br><br>
+                    <b>Fotografía</b>
+                    Matthew Jensen, John B. Aronson, Checco Varese<br><br>
+                    <b>Reparto</b>
+                    Anna Paquin, Stephen Moyer, Sam Trammell, Ryan Kwanten, Rutina Wesley, Chris Bauer, Nelsan Ellis, Jim Parrack, Carrie Preston, Michael Raymond-James, William Sanderson, Robert Amjarv, Adina Porter, Alexander Skarsgård, Todd Lowe, Lois Smith, Kristin Bauer, Lizzy Caplan, Lynn Collins, Stephen Root, Aisha Hinds, Raoul Trujillo, John Billingsley, Joe Manganiello, Deborah Ann Woll, Melissa Rauch<br><br>
+                    <b>Productora</b>
+                    Home Box Office (HBO)<br><br>
+                    <b>Género</b>
+                    Serie de TV. Fantástico. Drama. Intriga | Vampiros. Hombres lobo<br><br>
+                    <b>Web oficial</b>
+                    <a href="http://www.hbo.com/true-blood">www.hbo.com/trueBlood</a><br><br>
+                    <h4>Sinopsis</h4>
+                    Serie de TV (2008-2014). 7 temporadas. 80 episodios. En un pueblo de Lousiana, una serie de brutales asesinatos hace peligrar la convivencia entre vampiros y seres humanos, que hasta entonces había sido pacífica gracias a una bebida japonesa hecha de sangre sintética. Sin embargo, algunos vampiros estaban descontentos porque preferían seguir alimentándose de sangre humana; pero también había hombres que no estaban satisfechos con esta situación. En estas circunstancias nace el polémico romance entre Bill Compton (Stephen Moyer, "Quills"), el primer vampiro que llega al pueblo, y Sookie Stackhouse (Anna Paquin), una camarera clarividente. Nueva serie de la HBO realizada por Alan Ball ("A dos metros bajo tierra"). Basada en la serie de novelas 'Southern vampire', de la escritora norteamericana Charlaine Harris. (SERIESJA)<br><br>
+                    <h4>Premios</h4>
+                    2011: Emmy: 4 nominaciones, incluyendo mejor actriz invitada (Alfre Woodard)<br>
+                    2010: Emmy: 5 nominaciones, incluyendo mejor serie drama y casting<br>
+                    2009: Emmy: Mejor casting. 3 nominaciones<br>
+                    2009: Globo de Oro: 2 nominaciones: mejor actriz (Paquin) y serie drama<br>
+                    2008: Globo de Oro: mejor actriz (Anna Paquin). Nominada a mejor serie drama<br>
+                    2009: Nominada Premios BAFTA TV: Mejor serie de TV - Internacional<br><br>
+                    
+                </div>
+            </div><br>
+        </div>
+    </div>
+    </body>
+    <footer>
+        <div class="top-footer">
+        </div>
+        <div class="content-footer">
+            <div class="caixes-footer">
+                <a href="mapaWeb.html">Mapa web<span class="flecha">&#9660</span></a>
+            </div>
+            <div class="caixes-footer">
+                <a href="contacta.html">Contacta<span class="flecha">&#9660</span></a>
+            </div>
+            <div class="caixes-footer">
+                info+
+            </div>
+        </div>
+    </footer>
+</html>
+

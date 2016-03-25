@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SeriesJa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <LINK REL=StyleSheet HREF="Public/css.css" TYPE="text/css" MEDIA=screen>
+    </head>
+    <body>
+        <div class="portada">
+            <a href="index.html"><img src="Public/img/Cartelera/cartelera.jpg" height="100px"/></a> <b>Series Ja </b> "Son para ti"<br>
+        </div>
+        <div class="header-box">
+            <div class="header-nav">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a> <span class="flecha">&#9660</span></li>
+                    <li><a href="listado.html">Listado <span class="flecha">&#9660</span></a></li>
+                    <li><a href="#">Top 50 <span class="flecha">&#9660</span></a></li>
+                    <li><a href="serieGrafia.html">SerieGrafía <span class="flecha">&#9660</span></a></li>
+                    <li><a href="#">Quiénes somos <span class="flecha">&#9660</span></a></li>
+                    <li style="float:right;"><a href="#">Log in <span class="flecha">&#9660</span></a></li>
+                </ul>
+            </div>
+            <div class="header-logo">
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="content-box">
+            <div class="izquierda">
+            <a href="index.html">home</a> > <a href="contacta.html">Contacto</a>
+            </div>
+            
+            <div class="derecha">
+            <form id="buscador" action="/search" style="display:inline;" method="get">
+                        <input id="caja_de_busqueda" name="q" placeholder="Introduce tu búsqueda..." />
+                        <input id="boton_de_buscar" value="Buscar" type="submit" />
+            </form>
+            </div>
+            
+            <h1>Contacta con nosotros</h1><br>
+            <div class="content-line-contacto">
+                <center><h2>Formulario de Contacto</h2><br>
+                    <form METHOD="POST" ACTION="System/Protocols/loginUsuari.php">
+                    <table align="center" BORDER=0>
+                        <TR>
+                            <TD>
+                                <input class="input" id="user" placeholder="Usuario" value="" type="text" name="user" maxlength="32"  autofocus required>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD>
+                                <input class="input" id="pass" placeholder="Tema a tratar" value="" type="text" name="tema" maxlength="50" required>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD>
+                                <textarea rows="8" cols="50" name="comment" form="usrform">Descripción del asunto..</textarea>
+                                <!--<input class="input" id="descripcion" placeholder="Descripción del asunto" value="" type="textarea" name="descipcion" maxlength="500" required> -->
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD>
+                                <input class="input" id="logbutton" type="submit" value="Enviar" name="enviar">
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD class="chekbox, ocultar" >
+                                <input type="checkbox" name="autologin" value="1">
+                                <label for="checkbox_id">Acepto las condiciones de uso</label>
+                            </TD>
+                        </TR>
+                    </table>
+                    </form></center>
+            </div>
+        </div>
+    </div>
+    </body>
+    <footer>
+        <div class="top-footer">
+        </div>
+        <div class="content-footer">
+            <div class="caixes-footer">
+                <a href="mapaWeb.html">Mapa web<span class="flecha">&#9660</span></a>
+            </div>
+            <div class="caixes-footer">
+                <a href="contacta.html">Contacta<span class="flecha">&#9660</span></a>
+            </div>
+            <div class="caixes-footer">
+                info+
+            </div>
+        </div>
+    </footer>
+</html>
+
+

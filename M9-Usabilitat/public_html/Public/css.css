@@ -1,15 +1,62 @@
 body{
     background-color:white;
 }
+.portada{
+     background-color: rgba(0, 188, 0, 0.4);
+     font-family: Comic Sans MS;
+     font-size: 40px;
+}
 .content-box{
     margin-left:8%;
     margin-right:8%;
     background-color: rgba(0, 188, 0, 0.4);
     padding: 1%;
 }
+.izquierda{
+    width:70%;
+    padding:1%;
+    float:left;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.derecha{
+    width:25%;
+    padding:1%;
+    float:right;
+    margin-left: auto ;
+    margin-right: auto ;
+}
 .content-line{
     width:90%;
     height:200px;
+    background-color: rgba(250, 250, 250, 0.3);
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.content-line-reseña{
+    width:90%;
+    height:1090px;
+    background-color: rgba(250, 250, 250, 0.3);
+    padding: 1%;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.imagen-reseña{
+    width:35%;
+    height:100%;
+    float: left;
+    overflow: auto;
+}
+.texto-reseña{
+    width:60%;
+    height:100%;
+    float: right;
+    overflow: auto;
+    padding: 1%;
+}
+.content-line-portada{
+    width:90%;
+    height:100px;
     background-color: rgba(250, 250, 250, 0.3);
     margin-left: auto ;
     margin-right: auto ;
@@ -26,6 +73,20 @@ body{
     margin: 0 auto;
     float: top;
     background-color:rgba(0,173,237,0.8);
+}
+.content-line-grafia{
+    width:90%;
+    height:280px;
+    background-color: rgba(250, 250, 250, 0.3);
+    margin-left: auto ;
+    margin-right: auto ;
+}
+.content-line-contacto{
+    width:90%;
+    height:350px;
+    background-color: rgba(250, 250, 250, 0.3);
+    margin-left: auto ;
+    margin-right: auto ;
 }
     .not-active {
         pointer-events: none;
@@ -143,10 +204,15 @@ footer{
     background-color: #222;
     height:120px;
     overflow: auto;
-    padding:2px;
+}
+.top-footer{
+    margin-top: 0;
+    padding: 4px;
+    background: rgba(160, 162, 0, 0.9);
 }
 .content-footer{
-    height:90%;
+    padding:2px;
+    height:80%;
     width:84%;
     margin-top: 2px;
     margin-left: auto;
